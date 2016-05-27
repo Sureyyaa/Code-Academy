@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BILLIARD</title>
+    <style>
+    
+    #table{
+      width: 1000px;
+      height: 600px;
+      background-color: brown;
+      margin: 0 auto;
+      padding:20px;
+      border-radius: 25px;
+    }
+    #bt{
+      width: 1000px;
+      height: 100%;
+      background-color: green;
+      border-radius: 25px;
+    }
+    #balacatop{
+      width: 60px;
+      height: 60px;
+      border-radius:100%;
+      background-color:blue;
+      position: absolute;
+      left:600px;
+      top:300px;
+    }
+    </style>
+
+  </head>
+  <body>
+    <div id="table">
+        <div id="bt">
+          <div id="balacatop" onclick="setInterval(hereket,1)"></div>
+        </div>
+    </div>
+
+  <script>
+  var en = 600;
+  var uzunluq = 300;
+
+  var deyerA = true;
+  var deyerB = true;
+  
+  var a1 = Math.random()*10;
+  var b1 = Math.random()*2;
+
+  function hereket(){
+
+    var aa = document.getElementById('bt').offsetWidth;
+    var bb = document.getElementById('bt').offsetHeight;
+
+          if(deyerA)  {
+
+            	en+=a1*b1;
+
+            if (en >=aa+60) {
+            	deyerA=false;
+            	}
+          }
+
+          else{
+            en-=a1;
+
+            if(en <= 150) {
+
+            deyerA=true 
+        	}
+        }
+
+                if(deyerB)  {
+
+                  uzunluq+=a1;
+
+                      if(uzunluq >=bb-30 ) {
+
+                        deyerB=false;
+
+                    }
+                }
+
+                else {
+
+                  uzunluq-=a1;
+
+                    if(uzunluq <= 30){
+
+                    deyerB=true 
+                	}
+                }
+                          document.getElementById('balacatop').style.left=en+'px'
+                          document.getElementById('balacatop').style.top=uzunluq+'px';
+  };
+
+  </script> 
+  </body>
+</html>

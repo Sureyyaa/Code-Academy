@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<script>
+	   
+a=true;
+function f(){
+	
+	if(a){
+		document.write("<div style='height:50px; width:150px; background:yellow; border-radius:50px'><button class='on' style=' border:ridge 15px; height:50px; width:50px; border-radius:100%; position:absolute; left:110px;' onclick='f()'><p style='position:absolute; left:-80px; top:-46px; font-size:35px; color:#ccc'> on </p></button></div>");
+		document.close();
+		a=false;
+	}
+	else{
+		document.write("<div style='height:50px; width:150px; background:black; position:absolute; border-radius:50px'><button class='off' style='height:50px; width:50px;  border-radius:100%; border:ridge 15px; position:absolute' onclick='f()'><p style='position:absolute; left:70px; top:-46px; font-size:35px;color:#ccc'> off </p></button></div>");
+		document.close();
+		a=true;
+	}
+}
+f();
+
+
+// if(a){
+// 		document.write("<input style='height:50px; width:150px; background:lightgreen; position:absolute; border-radius:50px'><button style='height:50px; width:50px; border-radius:100%; position:absolute;' onclick='f()'>on</button> <p style='position: absolute'>ON</p> </input>");
+// 		document.close();
+// 		a=false;
+// 	}
+// 	else{
+// 		document.write("<input style='height:50px; width:150px; background:yellow; position:absolute; border-radius:50px'><button style='height:50px; width:50px; border-radius:100%; position:absolute' onclick='f()'>off</button> OFF </input>");
+// 		document.close();
+// 		a=true;
+// 	}
+// }
+// f();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

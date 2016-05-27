@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script>
+
+	var forma=function(border, borderRadius){
+		this.border=border,
+		this.borderRadius=borderRadius
+	}
+	var olcu=function(width, height){
+		this.width=width,
+		this.height=height
+	}
+	var reng=function(color, backgroundColor){
+		this.color=color,
+		this.backgroundColor=backgroundColor
+	}
+	
+	reng.prototype=olcu("300px","200px");
+	olcu.prototype=forma("50px","100%");
+	
+var form=new forma("50px","100%");
+var olcum=new olcu("300px","200px");
+var rengim=new reng("black","yellow");
+
+var div=function(color, backgroundColor, border, borderRadius, width, height){
+
+document.write('<div style="height:'+olcum.height+'; width:'+olcum.height+';background-color:'+rengim.color+'; border-radius:'+form.borderRadius+'"></div>')
+
+}
+
+div();
+
+
+
+
+
+
+
+
+
+
+
+
+// olcu.prototype=new reng("black","yellow","red");
+// reng.prototype=new forma("solid","50px","100%");
+
+
+
+//ovalim
+
+//daire
+// document.write('<div style="height:'+olcum.height+'; width:'+olcum.height+';background-color:'+olcu.prototype.backgroundColor+'; border-radius:'+reng.prototype.borderRadius2+'"></div>')
+//duzbucaqli
+// document.write('<div style="height:'+olcum.height+'; width:'+olcum.width+';background-color:'+olcu.prototype.color1+'"></div>')
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

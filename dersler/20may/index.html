@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<style>
+
+	/*div{
+		height: 200px;
+		width: 300px;
+		background: #ccc;
+		margin: 5px;
+		float: left;
+	}*/
+
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+<body>
+<!-- 
+<div id="sifir"></div>
+<div class="bir"></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div> -->
+
+
+
+<script>
+
+
+	// document.getElementById("sifir").style.background="yellow";
+	// document.getElementsByClassName("bir")[0].style.background="red";
+	// document.getElementsByTagName("div")[4].style.height="350px";
+	// document.getElementsByTagName("div")[3].innerHTML="hu huuuuuu";
+
+
+function divYarat(divsayi, boyukdivWidth, sutun, margin){
+var boyukDiv=document.createElement("div");
+document.body.appendChild(boyukDiv);
+boyukDiv.setAttribute("class","boyukDiv");
+boyukDiv.setAttribute("style","background:#ccc");
+boyukDiv.style.width=boyukdivWidth+"px";
+
+for(var i=0; i<=divsayi; i++){
+var divim=document.createElement("div");
+divim.setAttribute("style","height:100px; background:yellow; display:inline-block");
+boyukDiv.appendChild(divim);
+
+divimWidth=boyukdivWidth/sutun-2*margin;
+divim.style.width=divimWidth+"px";
+divim.style.margin=margin+"px";
+}
+}
+
+divYarat(15, 970, 6, 2);
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
