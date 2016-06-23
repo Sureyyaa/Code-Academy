@@ -1,0 +1,295 @@
+/*#sec1{
+	background-image: url("")
+}
+
+ul li{
+	display: inline-block;
+	padding:10px;
+}
+.menu{
+	background: gray;
+}
+.buton1{
+	height: 30px;
+	width: 60px;
+	border:1px solid black;
+}
+.buton2{
+	height: 50px;
+	width: 100px;
+	border:1px solid black;
+}
+*/
+
+
+
+
+
+
+
+
+/*section3*/
+
+
+#services{
+	background: #F4F5F5;
+	padding: 50px;
+}
+.aa{
+	font-size: 20px;
+}
+.a{
+	padding:20px;
+	border:1px solid #C3C4C4;
+	margin: 8px;
+	width: 350px;
+	float:right;
+}
+
+
+
+
+
+/*section4*/
+
+
+
+
+#work{
+	padding:100px;
+}
+.bir{
+	position: absolute;
+	left:40px;
+	bottom:40px;
+}
+.boyukSekil1{
+	height: 100%;
+    width: 100%;
+    transition: 0.5s;
+}
+.item{
+	position: relative;
+	overflow: hidden;
+    margin: 5px;
+     width: 97%;
+}
+.kolge{
+	overflow: hidden;
+	position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+}
+.item:hover .kolge{
+	display: block;
+
+}
+
+/*.gizli{
+	 visibility: hidden;
+}*/
+
+.item:hover .boyukSekil1{
+	transform: scale(1.4);
+}
+
+.bir div{
+	color: #00B0ED;
+}
+.bir h3{
+	color:white;
+}
+.bir p{
+	color:white;
+}
+i{
+	cursor: pointer;
+}
+
+.sekil1{
+	height: 100%;
+	width: 100%;
+	float: left;
+	transition: 0.5s;
+}
+.item2{
+	position: relative;
+	overflow: hidden;
+	margin: 5px;
+	height: 49%;
+	width: 48%;
+	float: left;
+}
+.kolge2{
+	position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+	width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+}
+.item2:hover .kolge2{
+	display: block;
+}
+
+.item2:hover .sekil1{
+	transform: scale(1.4);
+}
+
+.metn{
+	font-size: 20px;
+}
+.card{
+	padding: 30px;
+	border:1px solid #E6E6E6;
+}
+.card img{
+	border-radius: 100%;
+	height: 70px;
+	width: 70px;
+}
+.buton3{
+	border:1px solid black;
+	padding:8px;
+	width: 180px;
+	cursor: pointer;
+}
+.buton3:hover{
+	background: black;
+	color:white;
+}
+
+
+
+
+
+
+
+
+
+.sec{
+	padding: 50px;
+}
+.sekiller{
+	overflow: hidden;
+	position: relative;
+	height: 30%;
+	width: 30%;
+	float: left;
+	margin: 5px;
+}
+.img{
+	height: 100%;
+	width: 100%;
+	transition: 0.s;
+}
+.qara{
+	padding: 40px;
+	top:0px;
+	left:0px;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.5);
+	display: none;
+
+}
+.sekiller:hover .qara{
+	display: block;
+}
+.sekiller:hover .img{
+	transform: scale(1.4);
+}
+.ikonlar i{
+	display: inline-block;
+	margin: 3px;
+	font-size: 20px;
+}
+.s{
+	text-align: center;
+	color: white;
+	margin-top: 80px;
+}
+.metn{
+	padding: 40px;
+}
+
+
+#blog{
+	background: #F4F5F5;
+}
+.kart{
+	text-align: center;
+	border: 1px solid #C3C4C4;
+	padding: 15px;
+	color: #64758F;
+}
+.button3{
+	border:1px solid black;
+	padding:2px 5px;	
+	width: 100px;
+	cursor: pointer;
+}
+.button3:hover{
+	background: black;
+	color:white;
+}
+.sekilCard{
+	border:1px solid #C3C4C4;
+}
+.crd{
+	padding: 15px;
+}
+.carr{
+	float: left;
+}
+
+
+
+
+
+#contact{
+	background: #1F2229;
+	padding: 100px;
+	color: white;
+}
+.blog2 p{
+	color: #808286;
+}
+.inputlar input{
+	padding: 10px;
+	margin: 10px;
+	float:left;
+	height: 45px;
+	width: 45%;
+	border: 1px solid #4C4E54;
+	background:#1F2229;
+	color:white;
+}
+.mesaj{
+	padding: 10px;
+	margin: 10px;
+	height: 45px;
+	width: 92.2%;
+	cursor: pointer;
+	border:1px solid white;
+	text-align: center;
+	color: white;
+}
+.mesaj:hover{
+	background: white;
+	color: #1F2229;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Table</title>
+	<style>
+	td{
+		border:1px solid gray;
+		padding:10px 25px;
+	}
+	tr:first-child{
+		background:red;
+	}
+	
+	</style>
+</head>
+<body>
+
+
+ <script>
+
+//birinci metod
+
+telebe1=["Rufet","Zeynallı",15,"Gunorta"]; // birinci nov 
+telebe2=["Qulu","Memmedli",15,"Gunorta"];
+telebe3=["Kamran","Beylerov",10,"Gunorta"];
+
+telebeler=[telebe1,telebe2,telebe3];
+
+document.write("<table>");
+for(i=0;i<3;i++){
+	document.write("<tr>");
+	for(j=0;j<4;j++){
+		document.write("<td>"+telebeler[i][j]+"</td>");
+	}
+	document.write("</tr>");
+}
+document.write("</table>");
+
+
+
+
+//ikinci metod
+
+// var ad=["Qulu","Kamran","Etibar","Ferid"];
+// var soyad=["Memmedli","Beylerov","Rustemzade","İbrahimli"];
+// var yas=[12,15,78,20];
+// var sinif=["Gunorta","Gunorta","Gunorta","Gunorta"];
+// document.write("<table>");
+// 	for(i=0;i<4;i++){
+// 		document.write("<tr>");
+// 		document.write("<td>"+ad[i]+"</td><td>"+soyad[i]+"</td><td>"+yas[i]+"</td><td>"+sinif[i]+"</td>")
+// 		document.write("</tr>");
+// 	}
+// document.write("</table>");
+
+</script>
+</body>
+</html>

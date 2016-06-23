@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+var codacademy= function(ders, qrup){
+	this.ders=ders,
+	this.qrup=qrup
+} 
+
+var bdu= function(fakulte, ixtisaslasma){
+	this.fakulte=fakulte,
+	this.ixtisaslasma=ixtisaslasma
+} 
+var qafqaz= function(ixtisas){
+	this.ixtisas=ixtisas
+} 
+
+var telebe=function(ad, soyad){
+	this.ad=ad,
+	this.soyad=soyad
+}
+
+var uni= function(){
+
+}
+
+var academy= function(){
+
+}
+
+uni.prototype=new bdu("akt", "modellesdirme");
+
+academy.prototype= new codacademy("js","seher");
+
+telebe.prototype=new codacademy("js","seher");
+telebe.prototype=new bdu("akt", "modellesdirme");
+telebe.prototype=new qafqaz("komp elmleri");
+
+var student=new telebe("sureyya","sadiqova");
+
+console.log(student.ad+", "+student.soyad+", "+uni.prototype.fakulte+", "+academy.prototype.qrup+", "+student.ixtisas)
+
+
+</script>
+
+</body>
+</html>

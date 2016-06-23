@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            th{
+                padding: 5px;
+                background: #ccc;
+                color: white;
+            }
+            td{
+                border: 1px solid #ccc;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+
+
+
+        // massivler
+
+//            var sinif = ['Feride', 'Qulu', 'Kamran', 'Etibar','Ferid'];
+
+//            sinif.push('Rufet');
+//            document.write(sinif.pop());
+//            for (var i = 0; i < sinif.length; i++) {
+//                document.write(sinif[i] + '<br>');
+//            }
+
+//            var tek = [];
+//            var cut = [];
+//
+//            for (var i = 1; i <= 100; i++) {
+//                if (i % 2 === 0) {
+//                    tek.push(i);
+//                } else {
+//                    cut.push(i);
+//                }
+//            }
+//            document.write('<table><tr><th>Tek</th><th>Cut</th></tr>');
+//            for (var j = 0; j < cut.length; j++) {
+//                document.write('<tr><td>' + tek[j] + '</td><td>' + cut[j] + '</td></tr>');
+//            }
+//            document.write('</table>');
+
+
+
+
+
+        // obyektler
+
+
+           var sinif = {
+               adlar: ['Cemil', 'Qulu', 'Kamran', 'Valeh'],
+               yaslar: [23, 19, 24, 25],
+               cins: ['oglan', 'oglan', 'zor oglan', 'beleda'],
+               cekiler: [65, 70, 91, 81],
+               boy: [1.83, 1.78, 1.85, 1.76],
+               yaz: function (ceki, boy) {
+                   var indeks = ceki / boy;
+                   if (indeks > 51) {
+                       return 'Ne qeder koksen e';
+                   } else {
+                       return 'yemek ye(makaron)';
+                   }
+               },
+               yazdir: function () {
+                   for (var i = 0; i < this.adlar.length; i++) {
+                       document.write(this.adlar[i]
+                               + ' ' + this.yaslar[i]
+                               + ' - ' + this.yaz(this.cekiler[i], this.boy[i])+'<br>');
+                   }
+               }
+           };
+           sinif.d_t = [1995, 1992, 1995, 1992];
+         sinif.yazdir();
+
+
+
+
+
+
+
+
+
+
+            // var sinif = {
+            //     ad: ['cemil', 'ad', 'ad3', 'ad4'],
+            //     soyad: ['daov', 'dasdayev', 'dsadsayeva', 'odsaov'],
+            //     yas: [25, 35, 18, 23],
+            //     goz: ['yasil', 'qirimizi', 'boy', 'goy']
+            // };
+            // function person(first, last, age, eye) {
+            //     this.firstName = first;
+            //     this.lastName = last;
+            //     this.age = age;
+            //     this.eyeColor = eye;
+            // }
+
+         
+
+
+
+//            console.log(myMother);
+        </script>
+
+    </body>
+</html>

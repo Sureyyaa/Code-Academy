@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+	
+
+var dogumTarixim= new Date(1993, 1, 24, 17, 30);
+var bugun= new Date();
+var zamanBugun=bugun.getTime();
+var zaman=dogumTarixim.getTime();
+
+var salise=zamanBugun-zaman;
+var saniye=Math.floor(salise/1000);
+var deqiqe=Math.floor(saniye/60);
+var saat=Math.floor(deqiqe/60);
+var gun=Math.floor(saat/24);
+var il=Math.floor(gun/365);
+
+document.write("men, Sadiqova Sureyya, "+(Math.floor(il))+" il, "+(gun-il*365)+" gun, "+(saat-gun*24)+" saat, "+(deqiqe-saat*60)+" deqiqe, "+(saniye-deqiqe*60)+" saniye, "+(salise-saniye*1000)+" salise yasamisam");
+
+
+
+</script>
+
+
+</body>
+</html>
